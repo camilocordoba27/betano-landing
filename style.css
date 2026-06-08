@@ -457,3 +457,19 @@ body {
     max-width: 315px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0px 0 0 0px;
+    z-index: 20;
+  }
+
+  .betano-logo {
+    width: 100px;
+  }
+
+  .hero-left img {
+    object-position: center bottom;
+  }
+}
