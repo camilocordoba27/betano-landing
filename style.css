@@ -393,7 +393,7 @@ body {
   .register-btn {
      width: 222px;
     height: 57px;
-    margin: 0 0 18px 0;
+    margin: 50px 0 18px 0;
     background: #ff390b;
     color: #fff;
     text-decoration: none;
@@ -472,4 +472,114 @@ body {
   .hero-left img {
     object-position: center bottom;
   }
+}
+
+/* POPUP WHATSAPP */
+.whatsapp-popup{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+
+    padding:12px 18px;
+    border-radius:50px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    font-family:Arial,sans-serif;
+
+    z-index:99999;
+
+    transition:.25s;
+    animation:pulse 2s infinite;
+}
+
+.whatsapp-popup:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+.wp-icon{
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+    background:#25D366;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:24px;
+}
+
+.wp-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.1;
+}
+
+.wp-text span{
+    font-size:13px;
+    font-weight:400;
+}
+
+.wp-text strong{
+    font-size:15px;
+    font-weight:700;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+@media(max-width:768px){
+
+.whatsapp-popup{
+
+right:12px;
+bottom:18px;
+
+padding:10px 14px;
+
+}
+
+.wp-icon{
+
+width:42px;
+height:42px;
+font-size:38px;
+
+}
+
+.wp-text strong{
+
+font-size:13px;
+
+}
+
+.wp-text span{
+
+font-size:11px;
+
+}
+
 }
